@@ -1,0 +1,32 @@
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+
+# TypeScript build artifacts
+*.js
+*.js.map
+
+# Environment variables and secret files
+.env
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE configs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Optional: Backup files
+*.bak
+*.swp
+*.tmp
