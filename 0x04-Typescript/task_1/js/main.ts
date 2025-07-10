@@ -30,3 +30,41 @@ const director: Directors = {
 }
 console.log(teacher);
 console.log(director);
+
+
+interface printTeacherFunction{
+  (firstName: string, lastName: string): string;
+}
+
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}.${lastName}`;
+};
+
+console.log(printTeacher("John", "Doe"));
+
+interface studentClassInterface{
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+class StudentClass implements studentClassInterface {
+  private firstName: string;
+  private lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): string{
+    return 'currently working';
+  }
+
+  displayName(): string{
+    return this.firstName;
+  }
+}
+
+const student = new StudentClass('Chioma', 'Blessing');
+console.log(student.displayName());
+console.log(student.workOnHomework());
