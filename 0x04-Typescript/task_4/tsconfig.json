@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                       // ✅ Fixes accessor error (get/set)
+    "module": "ESNext",                    // or "commonjs" if preferred
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./js",                     // Adjust based on your source folder
+    "moduleResolution": "node"
+  },
+  "include": ["js/**/*"]
+}
